@@ -626,6 +626,13 @@ progress {
   color: #6c757d;
 }
 
+.mi-background {
+  background-image: url(../assets/img/DSCN7960.JPG);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+ }
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -11002,6 +11009,19 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-box {
+  position: absolute;
+  top: 77%;
+  background-color: #000;
+  opacity: 50%;
+}
+.portfolio .portfolio-item .portfolio-item-titol {
+  position: absolute;
+  top: 79%;
+}
+.portfolio .portfolio-item .portfolio-item-titol .portfolio-item-titol-content {
+  font-size: 2.5rem;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
