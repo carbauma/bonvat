@@ -11027,6 +11027,12 @@ html {
   margin-right: auto;
 }
 
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
