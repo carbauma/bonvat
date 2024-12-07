@@ -626,12 +626,30 @@ progress {
   color: #6c757d;
 }
 
-.mi-background {
-  background-image: url(../assets/img/DSCN7960.JPG);
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: no-repeat;
- }
+@media (min-width: 10px) {
+  .mi-background {
+    background-image: url(../assets/img/Portada_1_mov.JPG);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+   }
+}
+@media (min-width: 500px) {
+  .mi-background {
+    background-image: url(../assets/img/Portada_1_tab.JPG);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+   }
+}
+@media (min-width: 1000px) {
+  .mi-background {
+    background-image: url(../assets/img/Portada_1.JPG);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+   }
+}
 
 .container,
 .container-fluid,
@@ -11002,6 +11020,13 @@ html {
     font-size: 1.5rem;
   }
 }
+.profile {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
