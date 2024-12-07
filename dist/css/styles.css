@@ -11027,10 +11027,24 @@ html {
   margin-right: auto;
 }
 
-.video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: 20px) {
+  .video {
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (min-width: 992px) {
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 840px; 
+    aspect-ratio: 16 / 9;
+  }
 }
 
 .portfolio .portfolio-item {
