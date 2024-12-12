@@ -52,3 +52,33 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Evita el envío normal del formulario
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        // Envía el formulario a Formspree
+        const response = await fetch('https://formspree.io/f/xbljewan', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json',
+            },
+        });
+
+        if (response.ok) {
+            // Redirige tras un envío exitoso
+            window.location.href = 'https://carbauma.github.io/bonvat/dist#form';
+        } else {
+            alert('Hubo un error al enviar el formulario. Inténtalo nuevamente.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar el formulario. Inténtalo nuevamente.');
+    }
+});
+
