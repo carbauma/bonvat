@@ -251,11 +251,9 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" action="https://formspree.io/f/xbljewan" method="POST">
+                    <form action="https://formspree.io/f/xbljewan" method="POST">
                         <!-- Hidden input for subject-->
-                        <div class="form-floating mb-3">
-                            <input type="hidden" name="_subject" value="Nuevo mensaje de la web BonVat">
-                        </div>
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de la web BonVat">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
@@ -281,22 +279,21 @@
                         <!---->
                         <!-- This is what your users will see when the form-->
                         <!-- has successfully submitted-->
-                        <!--<div class="d-none" id="submitSuccessMessage">
+                        <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Mensaje enviado, muchas gracias!</div>
                             </div>
-                        </div>-->
+                        </div>
                         <!-- Submit error message-->
                         <!---->
                         <!-- This is what your users will see when there is-->
                         <!-- an error submitting the form-->
-                        <!--<div class="d-none" id="submitErrorMessage">
+                        <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error al enviar el mensaje.</div>
-                        </div>-->
+                        </div>
                         <!-- Submit Button-->
                         <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
                     </form>
-                    
                 </div>
             </div>
         </div>
