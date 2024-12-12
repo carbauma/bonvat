@@ -251,18 +251,14 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <!--<form id="contactForm" data-sb-form-api-token="API_TOKEN">-->
-                        <!-- Subjecy hidden input-->
-                        <form action="https://formspree.io/f/xbljewan" method="POST">
+                    <form action="https://formspree.io/f/xbljewan" method="POST">
+                        <!-- Hidden input for subject-->
                         <div class="form-floating mb-3">
                             <input type="hidden" name="_subject" value="Nuevo mensaje de la web BonVat">
+                        </div>
+                        <!-- Hidden input for redirect -->
+                        <div>
+                            <input type="hidden" name="redirect" value="https://carbauma.github.io/bonvat/dist/#contact">
                         </div>
                         <!-- Name input-->
                         <div class="form-floating mb-3">
@@ -277,16 +273,9 @@
                             <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere su email.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email no válido.</div>
                         </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
-                            <label for="phone">Número de teléfono</label>
-                            <!-- <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere su número de
-                                teléfono.</div>-->
-                        </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" name="message" type="text"
+                            <textarea class="form-control" id="message" name="message"
                                 placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                             <label for="message">Mensaje</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.
@@ -299,9 +288,6 @@
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Mensaje enviado, muchas gracias!</div>
-                                <!--To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
                             </div>
                         </div>
                         <!-- Submit error message-->
@@ -309,7 +295,7 @@
                         <!-- This is what your users will see when there is-->
                         <!-- an error submitting the form-->
                         <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error al enviar el mensaje.!</div>
+                            <div class="text-center text-danger mb-3">Error al enviar el mensaje.</div>
                         </div>
                         <!-- Submit Button-->
                         <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
