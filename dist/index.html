@@ -252,6 +252,14 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
                     <form id="contactForm" action="https://formspree.io/f/xbljewan" method="POST">
+                        
+                        <!-- Subject input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="_subject" name="_subject" type="text" placeholder="Enter your subject..." required />
+                            <label for="name">Asunto</label>
+                            <div class="invalid-feedback">Se requiere un asunto.</div>
+                        </div>
+
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
@@ -265,12 +273,6 @@
                             <label for="email">Email</label>
                             <div class="invalid-feedback">Se requiere su email.</div>
                             <div class="invalid-feedback">Email no válido.</div>
-                        </div>
-                    
-                        <!-- Phone number input (optional)-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="(+34) 646 646 646" />
-                            <label for="phone">Número de teléfono</label>
                         </div>
                     
                         <!-- Message input-->
